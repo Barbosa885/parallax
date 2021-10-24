@@ -1,0 +1,32 @@
+<html lang="pt-br">
+<head>
+  <title>Para and Relax</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+  <body>
+    <section>
+      <img src="./assets/bg.jpg" id="bg">
+      <img src="./assets/mountain.png" id="mountain">
+      <img src="./assets/road.png" id="road">
+      <img src ="./assets/moon.png" id="moon">
+      <h2 id="text">É o codas</h2>
+    </section>
+    <script type="text/javascript">
+      let bg = document.getElementById("bg");
+      let moon = document.getElementById("moon");
+      let mountain = document.getElementById("mountain");
+      let road = document.getElementById("road");
+
+      window.addEventListener('scroll', function(){ 
+        var value = window.scrollY;
+
+        bg.style.top = value * 0.5 + 'px';
+        moon.style.left = -value * 0.15 + 'px';  
+        mountain.style.top = -value * 0.15 + 'px';
+        road.style.top = value * 0.15 + 'px'; 
+        text.style.top = value * 1 + 'px';
+
+      })
+    </script>
+  </body>
+</html>
